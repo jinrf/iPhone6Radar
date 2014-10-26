@@ -59,6 +59,8 @@ This app uses several thrid party opensource packages, including:
 5. [UIColor+iOS7Colors]()
 
 ##License
+**This software is licensed under MIT License.**
+
 Copyright (c) 2014 clingmarks.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
