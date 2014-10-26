@@ -53,6 +53,7 @@ To install the app on your iPhone, you need to:
 This app uses several thrid party opensource packages, including:
 
 1. [AFNetworking]()
+2. [Background Location Update](https://github.com/voyage11/Location)
 2. [SMTPLibrary]()
 3. [CSNotificationView]()
 4. [UIColor+HexString]()
