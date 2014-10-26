@@ -1,5 +1,4 @@
 # iPhone 6 Radar
-============
 ## Why "iPhone 6 Radar"?
 ###The Pain
 If you want to buy an iPhone 6/6+ without renewing contract, you know the pain. Since the release in September, iPhone 6 and iPhone 6 plus are incredibly hard to find at your local Apple Stores. Let alone choosing storage size and your favorite color!
