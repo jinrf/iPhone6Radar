@@ -117,7 +117,7 @@
                                 </connections>
                             </button>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="v19-2L-Clj">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="v19-2L-Clj">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4yV-md-6fI">
                                 <rect key="frame" x="554" y="2" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -357,7 +357,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="3yT-8y-ll3">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="sD2-TZ-Ks3">
+                        <barButtonItem key="rightBarButtonItem" id="sD2-TZ-Ks3">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GEq-J2-FRk">
                                 <rect key="frame" x="451" y="7" width="45" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -657,13 +657,13 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sent when iPhone 6 in stock" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1RA-Ob-KmG">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sent when iPhone 6 in stock" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1RA-Ob-KmG">
                                                     <rect key="frame" x="15" y="33" width="170" height="12"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="170" id="B76-Sd-jBM"/>
                                                         <constraint firstAttribute="height" constant="12" id="qe2-N7-A7x"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -692,7 +692,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Notification" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGZ-Vq-jMZ">
-                                                    <rect key="frame" x="15" y="16" width="444" height="17"/>
+                                                    <rect key="frame" x="15" y="16" width="393" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="150" id="MFb-VL-9Ie"/>
                                                         <constraint firstAttribute="height" constant="17" id="mXr-tR-JY5"/>
@@ -717,9 +717,9 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@gmail.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2C-BH-kle">
-                                                    <rect key="frame" x="517" y="36" width="70" height="21"/>
+                                                    <rect key="frame" x="517" y="14" width="70" height="22"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="2Ps-6Y-EHO"/>
+                                                        <constraint firstAttribute="height" constant="22" id="2Ps-6Y-EHO"/>
                                                         <constraint firstAttribute="width" constant="70" id="t8C-MO-VYU"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -727,28 +727,31 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current only support gmail." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WN1-WB-Mj6">
-                                                    <rect key="frame" x="15" y="33" width="444" height="16"/>
+                                                    <rect key="frame" x="15" y="33" width="577" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="uZw-Vl-Cqz"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" tag="1006" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gWs-it-ERb">
-                                                    <rect key="frame" x="467" y="14" width="120" height="22"/>
+                                                    <rect key="frame" x="416" y="14" width="100" height="22"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="22" id="Wnn-Wr-4MX"/>
-                                                        <constraint firstAttribute="width" constant="120" id="Z46-ZZ-EA8"/>
+                                                        <constraint firstAttribute="width" constant="100" id="Z46-ZZ-EA8"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="gWs-it-ERb" firstAttribute="centerY" secondItem="f2C-BH-kle" secondAttribute="centerY" id="41x-na-IP7"/>
+                                                <constraint firstAttribute="centerY" secondItem="gWs-it-ERb" secondAttribute="centerY" id="5aa-75-AUL"/>
                                                 <constraint firstItem="f2C-BH-kle" firstAttribute="trailing" secondItem="wuY-k0-uvI" secondAttribute="trailingMargin" constant="-5" id="5gF-wi-LQR"/>
                                                 <constraint firstItem="f2C-BH-kle" firstAttribute="top" secondItem="gWs-it-ERb" secondAttribute="bottom" id="6Ri-gW-Hyd"/>
                                                 <constraint firstItem="gWs-it-ERb" firstAttribute="centerY" secondItem="RGZ-Vq-jMZ" secondAttribute="centerY" id="A6W-zj-GlA"/>
+                                                <constraint firstAttribute="centerY" secondItem="f2C-BH-kle" secondAttribute="centerY" id="DRb-gL-xOi"/>
                                                 <constraint firstAttribute="centerY" secondItem="gWs-it-ERb" secondAttribute="centerY" id="G1u-GR-XaR"/>
                                                 <constraint firstItem="f2C-BH-kle" firstAttribute="leading" secondItem="gWs-it-ERb" secondAttribute="trailing" constant="2" id="I2G-Vb-GCT"/>
                                                 <constraint firstAttribute="centerY" secondItem="f2C-BH-kle" secondAttribute="centerY" id="UvK-ex-3SM"/>
@@ -758,17 +761,26 @@
                                                 <constraint firstItem="WN1-WB-Mj6" firstAttribute="leading" secondItem="wuY-k0-uvI" secondAttribute="leadingMargin" constant="7" id="bAK-4U-Ff4"/>
                                                 <constraint firstItem="RGZ-Vq-jMZ" firstAttribute="leading" secondItem="wuY-k0-uvI" secondAttribute="leadingMargin" constant="7" id="bSS-S3-mlp"/>
                                                 <constraint firstItem="8fO-II-iaO" firstAttribute="top" secondItem="RGZ-Vq-jMZ" secondAttribute="bottom" id="beI-p2-DRP"/>
-                                                <constraint firstItem="gWs-it-ERb" firstAttribute="trailing" secondItem="wuY-k0-uvI" secondAttribute="trailingMargin" constant="-5" id="g5B-mP-cZT"/>
+                                                <constraint firstItem="gWs-it-ERb" firstAttribute="trailing" secondItem="wuY-k0-uvI" secondAttribute="trailingMargin" constant="-75" id="g5B-mP-cZT"/>
                                                 <constraint firstItem="gWs-it-ERb" firstAttribute="trailing" secondItem="wuY-k0-uvI" secondAttribute="trailingMargin" constant="-5" id="ljP-mU-sAy"/>
                                                 <constraint firstItem="gWs-it-ERb" firstAttribute="leading" secondItem="WN1-WB-Mj6" secondAttribute="trailing" constant="8" id="mrO-1E-8Pw"/>
+                                                <constraint firstItem="WN1-WB-Mj6" firstAttribute="trailing" secondItem="wuY-k0-uvI" secondAttribute="trailingMargin" id="oC9-1s-Xrf"/>
+                                                <constraint firstAttribute="centerY" secondItem="f2C-BH-kle" secondAttribute="centerY" id="rW2-gy-Uau"/>
+                                                <constraint firstItem="f2C-BH-kle" firstAttribute="leading" secondItem="gWs-it-ERb" secondAttribute="trailing" constant="1" id="u4i-9z-lXp"/>
                                                 <constraint firstItem="WN1-WB-Mj6" firstAttribute="top" secondItem="RGZ-Vq-jMZ" secondAttribute="bottom" id="z6d-w7-aEZ"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
+                                                    <exclude reference="5aa-75-AUL"/>
                                                     <exclude reference="G1u-GR-XaR"/>
+                                                    <exclude reference="g5B-mP-cZT"/>
                                                     <exclude reference="ljP-mU-sAy"/>
+                                                    <exclude reference="mrO-1E-8Pw"/>
+                                                    <exclude reference="6Ri-gW-Hyd"/>
+                                                    <exclude reference="DRb-gL-xOi"/>
                                                     <exclude reference="I2G-Vb-GCT"/>
                                                     <exclude reference="UvK-ex-3SM"/>
+                                                    <exclude reference="rW2-gy-Uau"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -817,7 +829,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fwi-Qw-G9q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="605" y="778"/>
+            <point key="canvasLocation" x="605" y="776"/>
         </scene>
         <!--Addi Phone View Controller-->
         <scene sceneID="tav-aw-P15">
@@ -906,8 +918,8 @@
                                     <constraint firstAttribute="height" constant="44" id="CZU-dy-c40"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="oY1-gg-iya"/>
-                                    <barButtonItem style="plain" id="6VF-Pj-UNE">
+                                    <barButtonItem systemItem="flexibleSpace" id="oY1-gg-iya"/>
+                                    <barButtonItem id="6VF-Pj-UNE">
                                         <view key="customView" contentMode="scaleToFill" id="ADJ-iZ-Hft">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -928,7 +940,7 @@
                                             </constraints>
                                         </view>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="OLH-x5-2fb"/>
+                                    <barButtonItem systemItem="flexibleSpace" id="OLH-x5-2fb"/>
                                 </items>
                             </toolbar>
                         </subviews>

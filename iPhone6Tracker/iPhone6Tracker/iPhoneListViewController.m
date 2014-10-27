@@ -102,8 +102,11 @@ static const NSTimeInterval kManualRefetchThreshold = 300.0;
     [self.refreshControl addTarget:self action:@selector(refreshTable) forControlEvents:UIControlEventValueChanged];
 
     [self printBackgroundRunStatus];
+}
 
-    if (![SettingsViewController settingsAvailable] || ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined)) {
+- (void) viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    if (![SettingsViewController settingsAvailable]) {
         [self performSegueWithIdentifier:@"showSettingsSegueId" sender:self];
     }
 }

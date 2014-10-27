@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B0D5D4919FDF6CE00772EF3 /* libMailCore-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0D5D3C19FDE54C00772EF3 /* libMailCore-ios.a */; };
 		4B44177D19EC8B7D004DBA6E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF8560D19E7A00500789A23 /* Security.framework */; };
-		4B44178A19EC8B7D004DBA6E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B44178319EC8B7D004DBA6E /* StoreKit.framework */; };
 		4BE4218719FAC9AC009E3850 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE4218619FAC9AC009E3850 /* CFNetwork.framework */; };
 		4BFC49A319D49C81004B561F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC49A219D49C81004B561F /* main.m */; };
 		4BFC49A619D49C81004B561F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC49A519D49C81004B561F /* AppDelegate.m */; };
@@ -25,14 +25,12 @@
 		D519B0F5D48461EDD62F506D /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D519BC23926B86BF8A0AF788 /* AFPropertyListRequestOperation.m */; };
 		D519B19918B52EF9FB6E7252 /* available@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D519B0B5D77EE7507302A33A /* available@2x.png */; };
 		D519B1A3C2FDE2BA9A79EDF5 /* AppleStoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D519BC44EDF5129E43D5DE75 /* AppleStoreTableViewCell.m */; };
-		D519B253520D3A70E481BBE8 /* HSK_CFUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D519B2949D6807D40B718921 /* HSK_CFUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D519B2720109751E35505C5F /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D519B07ED3D472A27FB92DE5 /* AFXMLRequestOperation.m */; };
 		D519B386317A11032AAE6B78 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = D519B2121E7C1241C489CFED /* UIColor+HexString.m */; };
 		D519B45BA43F55C772367F8A /* verizon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D519B1CE55C0DF42C28D45D3 /* verizon@3x.png */; };
 		D519B46D41EB346E1EC4F141 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D519BAD505043F5E416D6C52 /* AFNetworkActivityIndicatorManager.m */; };
 		D519B5464DCD2F56FD3CDE16 /* att@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D519B34597EE30C8F91D73A4 /* att@3x.png */; };
 		D519B57514A1776B67ABE098 /* available.png in Resources */ = {isa = PBXBuildFile; fileRef = D519B84F72AD40709478D086 /* available.png */; };
-		D519B58BDEED1EC998A69798 /* SKPSMTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D519BBF9689B480146B0D69F /* SKPSMTPMessage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D519B6144A0EFEDB23F26CE4 /* settings@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D519BFD510E1CD31C014D979 /* settings@3x.png */; };
 		D519B64DF46F7DC2E4A1B7D9 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D519B663EA6ECE01376CB3E5 /* AFHTTPRequestOperation.m */; };
 		D519B6A4421C689D670359F6 /* spring@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D519B2EE54EB9D08EC06213C /* spring@3x.png */; };
@@ -41,17 +39,14 @@
 		D519B792A0840D5FE047A811 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D519B4B9B94CBFBCF46B4FFE /* AFJSONRequestOperation.m */; };
 		D519B8223EF5CBA77C5A1F53 /* tmobile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D519BFC5DB5287D84E49D61B /* tmobile@2x.png */; };
 		D519B84027387B95A3F44BCE /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D519BB5AF5E84E6EB07E22B3 /* AFHTTPClient.m */; };
-		D519B85854609467811FE1DD /* NSData+Base64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = D519B93616C77CE1EA21E0EF /* NSData+Base64Additions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D519B896984C80E30A279228 /* sprint@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D519BB32DAFF42A1BCD70E94 /* sprint@2x.png */; };
 		D519B8D21B5288852903B671 /* EmailPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D519BD1EB83E87EB7F474A68 /* EmailPasswordViewController.m */; };
 		D519B9142D9F8F4C1E7FD89A /* iphone6-radar-icon@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D519BF18784DE896EEA10A98 /* iphone6-radar-icon@2x.jpg */; };
-		D519B9D27AA00CC871C2ACAA /* NSStream+SKPSMTPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D519B6B569937FFB427776AF /* NSStream+SKPSMTPExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D519B9E486A61694B498F8C6 /* not_available@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D519BA78FAA344F22B2BAAA9 /* not_available@2x.png */; };
 		D519BA4E02B7AF1B42828E9B /* add@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D519B33F7A5AEA294EE56133 /* add@3x.png */; };
 		D519BAAA6DACD3B1FD849B62 /* iPhone6.m in Sources */ = {isa = PBXBuildFile; fileRef = D519B9C873A363B8616CB618 /* iPhone6.m */; };
 		D519BAEF5F66F49AED95C651 /* add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D519B8FEB2D6ECC77DACDEDC /* add@2x.png */; };
 		D519BAFECA7CD5315287E20C /* EmailSender.m in Sources */ = {isa = PBXBuildFile; fileRef = D519B968290A99C0EA06CCEC /* EmailSender.m */; };
-		D519BB0D97EF2A3A59EDEE42 /* Base64Transcoder.m in Sources */ = {isa = PBXBuildFile; fileRef = D519BDB6B6566381EB428305 /* Base64Transcoder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D519BB1C0BCA76E97A41D752 /* BackgroundTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D519BE2D433B1BB529ECB2E9 /* BackgroundTaskManager.m */; };
 		D519BBEC549DFD8911406922 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D519B1219F26CC31759E29E4 /* UIImageView+AFNetworking.m */; };
 		D519BC3BBED2FA68D6908935 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D519B602042A3F67942D71FB /* SettingsViewController.m */; };
@@ -77,6 +72,62 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4B0D5D3919FDE54C00772EF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B0D5D2F19FDE54C00772EF3 /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C64EA537169E772200778456;
+			remoteInfo = "static mailcore2 osx";
+		};
+		4B0D5D3B19FDE54C00772EF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B0D5D2F19FDE54C00772EF3 /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6BA2C191705F4E6003F0E9E;
+			remoteInfo = "static mailcore2 ios";
+		};
+		4B0D5D3D19FDE54C00772EF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B0D5D2F19FDE54C00772EF3 /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C64EA78C169F259200778456;
+			remoteInfo = tests;
+		};
+		4B0D5D3F19FDE54C00772EF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B0D5D2F19FDE54C00772EF3 /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6A81B911706840C00882C15;
+			remoteInfo = "test-ios";
+		};
+		4B0D5D4119FDE54C00772EF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B0D5D2F19FDE54C00772EF3 /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6BD288D170BD71100A91AC1;
+			remoteInfo = "mailcore osx";
+		};
+		4B0D5D4319FDE54C00772EF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B0D5D2F19FDE54C00772EF3 /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27780C3A19CF9CD100C77E44;
+			remoteInfo = "mailcore ios";
+		};
+		4B0D5D4519FDE54C00772EF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B0D5D2F19FDE54C00772EF3 /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6B5AE0219F630B3001352A6;
+			remoteInfo = unittest;
+		};
+		4B0D5D4719FDE56700772EF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B0D5D2F19FDE54C00772EF3 /* mailcore2.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C6BA2B091705F4E6003F0E9E;
+			remoteInfo = "static mailcore2 ios";
+		};
 		4BFC49BA19D49C82004B561F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4BFC499519D49C81004B561F /* Project object */;
@@ -87,10 +138,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4B44178319EC8B7D004DBA6E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		4B0D5D2F19FDE54C00772EF3 /* mailcore2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mailcore2.xcodeproj; path = "../Mailcore2/build-mac/mailcore2.xcodeproj"; sourceTree = "<group>"; };
 		4BE4218619FAC9AC009E3850 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		4BF8560D19E7A00500789A23 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		4BF8560F19E7A04B00789A23 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
 		4BFC499D19D49C81004B561F /* iPhone6Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPhone6Tracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BFC49A119D49C81004B561F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BFC49A219D49C81004B561F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -110,10 +160,8 @@
 		4BFC49CB19D4F102004B561F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		4BFC49CD19D4F313004B561F /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		D519B06DE24A43B6BC40C460 /* iPhoneTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneTableViewCell.h; sourceTree = "<group>"; };
-		D519B0758C5E6E9D4EA99FB1 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
 		D519B076A151CBC89B319A9A /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
 		D519B07ED3D472A27FB92DE5 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
-		D519B0B28F09C15B3D13C863 /* NSStream+SKPSMTPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSStream+SKPSMTPExtensions.h"; sourceTree = "<group>"; };
 		D519B0B5D77EE7507302A33A /* available@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "available@2x.png"; sourceTree = "<group>"; };
 		D519B10BACC2375839FE39BC /* UIColor+iOS7Colors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+iOS7Colors.m"; sourceTree = "<group>"; };
 		D519B1219F26CC31759E29E4 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
@@ -125,7 +173,6 @@
 		D519B22D5AB351606362E72C /* InventoryCheckManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventoryCheckManager.m; sourceTree = "<group>"; };
 		D519B27E916EBB55ED4F6E56 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
 		D519B28C47CC8EDCCFEECCD2 /* AppleStoreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleStoreTableViewCell.h; sourceTree = "<group>"; };
-		D519B2949D6807D40B718921 /* HSK_CFUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSK_CFUtilities.m; sourceTree = "<group>"; };
 		D519B2A1F7B2DF3623047594 /* InventoryCheckManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventoryCheckManager.h; sourceTree = "<group>"; };
 		D519B2AB71FCD8C897478A85 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
 		D519B2E7C0C355555946BB42 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -151,7 +198,6 @@
 		D519B66BD1C4E492C4F6AF5A /* AppleStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleStore.h; sourceTree = "<group>"; };
 		D519B680616F497F5C47FA4D /* iPhoneAvailabilityOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhoneAvailabilityOperation.m; sourceTree = "<group>"; };
 		D519B6A03D0D18A17A30BD64 /* att@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "att@2x.png"; sourceTree = "<group>"; };
-		D519B6B569937FFB427776AF /* NSStream+SKPSMTPExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSStream+SKPSMTPExtensions.m"; sourceTree = "<group>"; };
 		D519B6DC660D59BF2D1CAD79 /* CSLayerStealingBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLayerStealingBlurView.m; sourceTree = "<group>"; };
 		D519B7410851255CA0D5335A /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
 		D519B7E7D046C59EC1E9E25F /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
@@ -159,8 +205,6 @@
 		D519B84F72AD40709478D086 /* available.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = available.png; sourceTree = "<group>"; };
 		D519B8FEB2D6ECC77DACDEDC /* add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add@2x.png"; sourceTree = "<group>"; };
 		D519B90C0C70EF42028C3CD2 /* AppleStoreMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleStoreMapViewController.m; sourceTree = "<group>"; };
-		D519B93616C77CE1EA21E0EF /* NSData+Base64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64Additions.m"; sourceTree = "<group>"; };
-		D519B94FD5BBC42F2D74A917 /* HSK_CFUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSK_CFUtilities.h; sourceTree = "<group>"; };
 		D519B95551CD80CAA8CD5551 /* not_available@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "not_available@3x.png"; sourceTree = "<group>"; };
 		D519B968290A99C0EA06CCEC /* EmailSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailSender.m; sourceTree = "<group>"; };
 		D519B9C873A363B8616CB618 /* iPhone6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhone6.m; sourceTree = "<group>"; };
@@ -170,12 +214,9 @@
 		D519BAD505043F5E416D6C52 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
 		D519BAF7FC8D3A611F522DF2 /* BackgroundTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundTaskManager.h; sourceTree = "<group>"; };
 		D519BAFB89E3AB23FBC1A27E /* EmailPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailPasswordViewController.h; sourceTree = "<group>"; };
-		D519BB0ED92A95397B079AC8 /* SKPSMTPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKPSMTPMessage.h; sourceTree = "<group>"; };
 		D519BB32DAFF42A1BCD70E94 /* sprint@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sprint@2x.png"; sourceTree = "<group>"; };
-		D519BB5460E5242B73EEB61B /* NSData+Base64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64Additions.h"; sourceTree = "<group>"; };
 		D519BB5AF5E84E6EB07E22B3 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
 		D519BBA1EBFB512D7AEA7EE8 /* CSNativeBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSNativeBlurView.h; sourceTree = "<group>"; };
-		D519BBF9689B480146B0D69F /* SKPSMTPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKPSMTPMessage.m; sourceTree = "<group>"; };
 		D519BBF96FA330572B90F740 /* AppleStoreLocationCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleStoreLocationCache.h; sourceTree = "<group>"; };
 		D519BC23926B86BF8A0AF788 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
 		D519BC44EDF5129E43D5DE75 /* AppleStoreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleStoreTableViewCell.m; sourceTree = "<group>"; };
@@ -187,7 +228,6 @@
 		D519BD1EB83E87EB7F474A68 /* EmailPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailPasswordViewController.m; sourceTree = "<group>"; };
 		D519BD6E4570046121C1A813 /* iphone6-radar-icon@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "iphone6-radar-icon@3x.jpg"; sourceTree = "<group>"; };
 		D519BDA6E241C378FB342F4E /* not_available.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = not_available.png; sourceTree = "<group>"; };
-		D519BDB6B6566381EB428305 /* Base64Transcoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64Transcoder.m; sourceTree = "<group>"; };
 		D519BDB9ECF90A5E62E0511D /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		D519BDD95CE4035EC741FBBA /* AddiPhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddiPhoneViewController.h; sourceTree = "<group>"; };
 		D519BE2D433B1BB529ECB2E9 /* BackgroundTaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundTaskManager.m; sourceTree = "<group>"; };
@@ -203,8 +243,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B0D5D4919FDF6CE00772EF3 /* libMailCore-ios.a in Frameworks */,
 				4BE4218719FAC9AC009E3850 /* CFNetwork.framework in Frameworks */,
-				4B44178A19EC8B7D004DBA6E /* StoreKit.framework in Frameworks */,
 				4B44177D19EC8B7D004DBA6E /* Security.framework in Frameworks */,
 				4BFC49CE19D4F313004B561F /* AddressBook.framework in Frameworks */,
 				4BFC49CC19D4F102004B561F /* CoreLocation.framework in Frameworks */,
@@ -222,12 +262,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B0D5D3019FDE54C00772EF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B0D5D3A19FDE54C00772EF3 /* libMailCore.a */,
+				4B0D5D3C19FDE54C00772EF3 /* libMailCore-ios.a */,
+				4B0D5D3E19FDE54C00772EF3 /* tests */,
+				4B0D5D4019FDE54C00772EF3 /* test-ios.app */,
+				4B0D5D4219FDE54C00772EF3 /* MailCore.framework */,
+				4B0D5D4419FDE54C00772EF3 /* MailCore-ios.framework */,
+				4B0D5D4619FDE54C00772EF3 /* unittest.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4BFC499419D49C81004B561F = {
 			isa = PBXGroup;
 			children = (
+				4B0D5D2F19FDE54C00772EF3 /* mailcore2.xcodeproj */,
 				4BE4218619FAC9AC009E3850 /* CFNetwork.framework */,
-				4B44178319EC8B7D004DBA6E /* StoreKit.framework */,
-				4BF8560F19E7A04B00789A23 /* libcommonCrypto.dylib */,
 				4BF8560D19E7A00500789A23 /* Security.framework */,
 				4BFC49CD19D4F313004B561F /* AddressBook.framework */,
 				4BFC49CB19D4F102004B561F /* CoreLocation.framework */,
@@ -327,26 +380,8 @@
 				D519BC7667E7180D14C023DE /* UIColor+iOS7Colors.h */,
 				D519B2121E7C1241C489CFED /* UIColor+HexString.m */,
 				D519B076A151CBC89B319A9A /* UIColor+HexString.h */,
-				D519B4D42699F40FDC9049B2 /* SMTPLibrary */,
 			);
 			path = 3rdParty;
-			sourceTree = "<group>";
-		};
-		D519B4D42699F40FDC9049B2 /* SMTPLibrary */ = {
-			isa = PBXGroup;
-			children = (
-				D519BB0ED92A95397B079AC8 /* SKPSMTPMessage.h */,
-				D519BBF9689B480146B0D69F /* SKPSMTPMessage.m */,
-				D519B94FD5BBC42F2D74A917 /* HSK_CFUtilities.h */,
-				D519B2949D6807D40B718921 /* HSK_CFUtilities.m */,
-				D519B0758C5E6E9D4EA99FB1 /* Base64Transcoder.h */,
-				D519BDB6B6566381EB428305 /* Base64Transcoder.m */,
-				D519BB5460E5242B73EEB61B /* NSData+Base64Additions.h */,
-				D519B93616C77CE1EA21E0EF /* NSData+Base64Additions.m */,
-				D519B0B28F09C15B3D13C863 /* NSStream+SKPSMTPExtensions.h */,
-				D519B6B569937FFB427776AF /* NSStream+SKPSMTPExtensions.m */,
-			);
-			path = SMTPLibrary;
 			sourceTree = "<group>";
 		};
 		D519BB0EA9FC8FCC31413771 /* CSNotificationView */ = {
@@ -431,6 +466,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4B0D5D4819FDE56700772EF3 /* PBXTargetDependency */,
 			);
 			name = iPhone6Tracker;
 			productName = iPhone6Tracker;
@@ -475,6 +511,7 @@
 					};
 					4BFC49B819D49C82004B561F = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = M5DZXTJ63H;
 						TestTargetID = 4BFC499C19D49C81004B561F;
 					};
 				};
@@ -490,6 +527,12 @@
 			mainGroup = 4BFC499419D49C81004B561F;
 			productRefGroup = 4BFC499E19D49C81004B561F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4B0D5D3019FDE54C00772EF3 /* Products */;
+					ProjectRef = 4B0D5D2F19FDE54C00772EF3 /* mailcore2.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4BFC499C19D49C81004B561F /* iPhone6Tracker */,
@@ -497,6 +540,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4B0D5D3A19FDE54C00772EF3 /* libMailCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMailCore.a;
+			remoteRef = 4B0D5D3919FDE54C00772EF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4B0D5D3C19FDE54C00772EF3 /* libMailCore-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libMailCore-ios.a";
+			remoteRef = 4B0D5D3B19FDE54C00772EF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4B0D5D3E19FDE54C00772EF3 /* tests */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = tests;
+			remoteRef = 4B0D5D3D19FDE54C00772EF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4B0D5D4019FDE54C00772EF3 /* test-ios.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "test-ios.app";
+			remoteRef = 4B0D5D3F19FDE54C00772EF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4B0D5D4219FDE54C00772EF3 /* MailCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MailCore.framework;
+			remoteRef = 4B0D5D4119FDE54C00772EF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4B0D5D4419FDE54C00772EF3 /* MailCore-ios.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = "MailCore-ios.framework";
+			remoteRef = 4B0D5D4319FDE54C00772EF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4B0D5D4619FDE54C00772EF3 /* unittest.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = unittest.xctest;
+			remoteRef = 4B0D5D4519FDE54C00772EF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4BFC499B19D49C81004B561F /* Resources */ = {
@@ -574,11 +669,6 @@
 				D519B46D41EB346E1EC4F141 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				D519B74E95BD689747F8FF14 /* UIColor+iOS7Colors.m in Sources */,
 				D519B386317A11032AAE6B78 /* UIColor+HexString.m in Sources */,
-				D519B58BDEED1EC998A69798 /* SKPSMTPMessage.m in Sources */,
-				D519B253520D3A70E481BBE8 /* HSK_CFUtilities.m in Sources */,
-				D519BB0D97EF2A3A59EDEE42 /* Base64Transcoder.m in Sources */,
-				D519B85854609467811FE1DD /* NSData+Base64Additions.m in Sources */,
-				D519B9D27AA00CC871C2ACAA /* NSStream+SKPSMTPExtensions.m in Sources */,
 				D519B8D21B5288852903B671 /* EmailPasswordViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -594,6 +684,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4B0D5D4819FDE56700772EF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "static mailcore2 ios";
+			targetProxy = 4B0D5D4719FDE56700772EF3 /* PBXContainerItemProxy */;
+		};
 		4BFC49BB19D49C82004B561F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4BFC499C19D49C81004B561F /* iPhone6Tracker */;
@@ -638,7 +733,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -658,7 +753,25 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lctemplate-ios",
+					"-letpan-ios",
+					"-licudata",
+					"-licui18n",
+					"-licuuc",
+					"-lxml2",
+					"-lsasl2",
+					"-liconv",
+					"-ltidy",
+					"-lz",
+					"-licucore",
+					"-lc++",
+					"-stdlib=libc++",
+					"-ObjC",
+				);
+				PROVISIONING_PROFILE = "393551bb-e0e3-41fe-9173-ee8e8d787af4";
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -679,7 +792,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -692,7 +805,25 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-lctemplate-ios",
+					"-letpan-ios",
+					"-licudata",
+					"-licui18n",
+					"-licuuc",
+					"-lxml2",
+					"-lsasl2",
+					"-liconv",
+					"-ltidy",
+					"-lz",
+					"-licucore",
+					"-lc++",
+					"-stdlib=libc++",
+					"-ObjC",
+				);
+				PROVISIONING_PROFILE = "393551bb-e0e3-41fe-9173-ee8e8d787af4";
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -700,13 +831,19 @@
 		4BFC49C419D49C82004B561F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = iPhone6Tracker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -715,21 +852,44 @@
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
 				);
+				OTHER_LDFLAGS = (
+					"-lctemplate-ios",
+					"-letpan-ios",
+					"-licudata",
+					"-licui18n",
+					"-licuuc",
+					"-lxml2",
+					"-lsasl2",
+					"-liconv",
+					"-ltidy",
+					"-lz",
+					"-licucore",
+					"-lc++",
+					"-stdlib=libc++",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "393551bb-e0e3-41fe-9173-ee8e8d787af4";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
 		4BFC49C519D49C82004B561F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = iPhone6Tracker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -738,8 +898,25 @@
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
 				);
+				OTHER_LDFLAGS = (
+					"-lctemplate-ios",
+					"-letpan-ios",
+					"-licudata",
+					"-licui18n",
+					"-licuuc",
+					"-lxml2",
+					"-lsasl2",
+					"-liconv",
+					"-ltidy",
+					"-lz",
+					"-licucore",
+					"-lc++",
+					"-stdlib=libc++",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "393551bb-e0e3-41fe-9173-ee8e8d787af4";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
@@ -747,6 +924,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -758,6 +937,7 @@
 				INFOPLIST_FILE = iPhone6TrackerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iPhone6Tracker.app/iPhone6Tracker";
 			};
 			name = Debug;
@@ -766,6 +946,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -773,6 +955,7 @@
 				INFOPLIST_FILE = iPhone6TrackerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iPhone6Tracker.app/iPhone6Tracker";
 			};
 			name = Release;

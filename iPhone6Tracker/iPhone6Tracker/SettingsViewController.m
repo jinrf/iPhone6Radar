@@ -24,6 +24,7 @@
 @property UIPickerView *pickerView;
 @property int pickerSelectedRow;
 @property NSString *emailPassword;
+@property NSString *userEnteredEmail;
 
 @end
 
@@ -101,6 +102,9 @@ static inline NSString* userEnteredEmailAddress(NSString *emailFieldText) {
     self.doneButton.layer.cornerRadius = 5.0f;
 
     self.runIntervals = @[@5, @10, @20, @30, @60, @120, @240];
+
+    self.userEnteredEmail = [SettingsViewController emailAddress];
+    self.emailPassword = [SettingsViewController emailPassword];
 
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(localNotificationPermissionChanged:)
@@ -201,15 +205,14 @@ static inline NSString* userEnteredEmailAddress(NSString *emailFieldText) {
     } else if (sender == self.notificationSwitch) {
         [defaults setBool:self.notificationSwitch.on forKey:@"settingsReceivePushNotification"];
     } else if (sender == self.emailField) {
-        NSString *newEmail = userEnteredEmailAddress(self.emailField.text);
-        NSString *currentEmail = [SettingsViewController emailAddress];
+        NSString *newEmail = self.userEnteredEmail;
 
-        if (newEmail != nil && newEmail.length > 0 && ![newEmail isEqualToString:currentEmail]) {
-            [defaults setObject:newEmail forKey:@"settingsEmailAddress"];
-            [defaults setObject:self.emailPassword forKey:@"settingsEmailPassword"];
-        } else if (newEmail == nil || newEmail.length == 0) {
+        if (newEmail == nil || newEmail.length == 0) {
             [defaults removeObjectForKey:@"settingsEmailAddress"];
             [defaults removeObjectForKey:@"settingsEmailPassword"];
+        } else {
+            [defaults setObject:newEmail forKey:@"settingsEmailAddress"];
+            [defaults setObject:self.emailPassword forKey:@"settingsEmailPassword"];
         }
     }
     [defaults synchronize];
@@ -384,9 +387,12 @@ static inline NSString* userEnteredEmailAddress(NSString *emailFieldText) {
     }
 
     NSString *newEmail = userEnteredEmailAddress(self.emailField.text);
-    NSString *currentEmail = [SettingsViewController emailAddress];
 
-    if (newEmail != nil && newEmail.length > 0 && ![newEmail isEqualToString:currentEmail]) {
+    if (newEmail == nil && newEmail.length == 0) {
+        self.userEnteredEmail = nil;
+        self.emailPassword = nil;
+    } else if (![newEmail isEqualToString:self.userEnteredEmail]) {
+        self.userEnteredEmail = newEmail;
         [self performSegueWithIdentifier:@"idShowEmailPasswordView" sender:self];
 //        UIAlertView *passwordAlertView = [[UIAlertView alloc] initWithTitle:@"Enter Email Password"
 //                                                                    message:@"Why need email password?\n\n1. This app use your email to send notification to yourself. So it has to know the password;"
@@ -404,7 +410,7 @@ static inline NSString* userEnteredEmailAddress(NSString *emailFieldText) {
 
     [textField resignFirstResponder];
 
-    return NO;
+    return YES;
 }
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
@@ -446,6 +452,8 @@ static inline NSString* userEnteredEmailAddress(NSString *emailFieldText) {
 - (void)dismissPasswordViewControllerWithPassword:(NSString *)password {
     if (password == nil) {
         self.emailField.text = @"";
+        self.userEnteredEmail = nil;
+        self.emailPassword = nil;
     } else {
         self.emailPassword = password;
     }

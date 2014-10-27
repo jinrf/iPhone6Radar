@@ -203,8 +203,14 @@ static const CLLocationDistance kRefetchDistanceThreashroldMeters = 5000;
             NSLog(@"current location: %@, last location: %@", _location, _lastFetchLocation);
             NSLog(@"since last refresh: %.0f, run interval: %.0f, distance: %.0f, distance threashrold: %.0f", sinceLastRefresh, [SettingsViewController runInterval], dist, kRefetchDistanceThreashroldMeters);
             if (dist >= kRefetchDistanceThreashroldMeters || sinceLastRefresh > ([SettingsViewController runInterval] * 60.0)) {
-                NSLog(@"fetching stock info from: Location Update");
+                NSLog(@"fetching stock info");
                 [self fetchStockInfo];
+
+//                [[EmailSender sharedSender] sendEmailTo:[SettingsViewController emailAddress]
+//                                                   from:[SettingsViewController emailAddress]
+//                                               password:[SettingsViewController emailPassword]
+//                                                subject:@"Test Email Alert"
+//                                                content:[NSString stringWithFormat:@"<html><body><h2>This Works!</h2>fetching stock info: distance from prev location: %.0f meters, %.0f seconds</body></html>", dist, sinceLastRefresh]];
             } else {
                 NSLog(@"skip fetching stock info: distance from prev location: %.0f meters, %.0f seconds", dist, sinceLastRefresh);
             }

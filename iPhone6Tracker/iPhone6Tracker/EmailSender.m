@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 www.clingmarks.com. All rights reserved.
 //
 
+#import <MailCore/mailcore.h>
 #import "EmailSender.h"
 #import "AppDelegate.h"
 #import "iPhone6.h"
 #import "AppleStore.h"
-#import "SKPSMTPMessage.h"
 
-@interface EmailSender () <SKPSMTPMessageDelegate>
+@interface EmailSender ()
 
 @end
 
@@ -34,27 +34,34 @@
            password:(NSString *)fromEmailPassword
             subject:(NSString *)subject
             content:(NSString *)htmlContent  {
-    @try {
-        SKPSMTPMessage *alertEmail = [[SKPSMTPMessage alloc] init];
-        alertEmail.delegate = self;
+    MCOSMTPSession *smtpSession = [[MCOSMTPSession alloc] init];
+    smtpSession.hostname = @"smtp.gmail.com";
+    smtpSession.port = 465;
+    smtpSession.username = fromEmail;
+    smtpSession.password = fromEmailPassword;
+    smtpSession.authType = MCOAuthTypeSASLPlain;
+    smtpSession.connectionType = MCOConnectionTypeTLS;
 
-        [alertEmail setFromEmail:fromEmail];
-        [alertEmail setToEmail:toEmail];
-        [alertEmail setRelayHost:@"smtp.gmail.com"];
-        [alertEmail setRequiresAuth:YES];
-        [alertEmail setLogin:fromEmail];
-        [alertEmail setPass:fromEmailPassword];
-        [alertEmail setSubject:subject];
-        [alertEmail setWantsSecure:YES];
-        [alertEmail setDelegate:self];
+    MCOMessageBuilder *builder = [[MCOMessageBuilder alloc] init];
+    MCOAddress *from = [MCOAddress addressWithDisplayName:nil
+                                                  mailbox:fromEmail];
+    MCOAddress *to = [MCOAddress addressWithDisplayName:nil
+                                                mailbox:toEmail];
+    [[builder header] setFrom:from];
+    [[builder header] setTo:@[to]];
+    [[builder header] setSubject:subject];
+    [builder setHTMLBody:htmlContent];
+    NSData * rfc822Data = [builder data];
 
-        NSDictionary *htmlPart = @{kSKPSMTPPartContentTypeKey : @"text/html", kSKPSMTPPartMessageKey : htmlContent, kSKPSMTPPartContentTransferEncodingKey : @"8bit"};
-        [alertEmail setParts:@[htmlPart]];
-        [alertEmail send];
-    }
-    @catch (NSException *exception) {
-        NSLog(@"Failed to send email to: %@, exception: %@, %@", toEmail, exception, [exception userInfo]);
-    }
+    MCOSMTPSendOperation *sendOperation =
+       [smtpSession sendOperationWithData:rfc822Data];
+    [sendOperation start:^(NSError *error) {
+        if(error) {
+            NSLog(@"Error sending email: %@, %@", [error localizedDescription], error.userInfo);
+        } else {
+            NSLog(@"Successfully sent email!");
+        }
+    }];
 }
 
 - (NSString *) htmlContentForModelNumbers:(NSArray *)modelNumbers {
@@ -90,12 +97,4 @@
     return htmlContent;
 }
 
-
-- (void)messageSent:(SKPSMTPMessage *)message {
-    NSLog(@"Message Sent");
-}
-
-- (void)messageFailed:(SKPSMTPMessage *)message error:(NSError *)error {
-    NSLog(@"Message Failed With Error(s): %@", [error description]);
-}
 @end
